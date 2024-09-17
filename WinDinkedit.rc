@@ -1,0 +1,956 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\WinDinkedit.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\WinDinkedit.ico"
+IDR_WINDINTYPE          ICON    DISCARDABLE     "res\\WinDinkeditDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR MOVEABLE PURE  16, 15
+BEGIN
+    BUTTON      ID_NEW_DMOD
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_SAVE_FIX
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_NEW_DMOD
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_SAVE_FIX
+        MENUITEM "&Play Dmod",                  ID_FILE_PLAYGAME
+        MENUITEM SEPARATOR
+        MENUITEM "Dmod Properties",             ID_DMOD_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&Display"
+    BEGIN
+        MENUITEM "&Minimap\tTAB",               IDM_VIEW_MINIMAP
+        POPUP "M&ode"
+        BEGIN
+            MENUITEM "Sprite Mode\tR",              IDM_VIEW_SPRITE_MODE
+            MENUITEM "Tile Mode\tT",                IDM_VIEW_TILE_MODE
+            MENUITEM "Hardbox Mode\tH",             IDM_VIEW_HARDBOX_MODE
+        END
+        POPUP "&Tile Selector"
+        BEGIN
+            MENUITEM "1-4\t1",                      IDM_VIEW_TILESET_1
+            MENUITEM "5-8\t2",                      IDM_VIEW_TILESET_2
+            MENUITEM "9-12\t3",                     IDM_VIEW_TILESET_3
+            MENUITEM "13-16\t4",                    IDM_VIEW_TILESET_4
+            MENUITEM "17-20\t5",                    IDM_VIEW_TILESET_5
+            MENUITEM "21-24\t6",                    IDM_VIEW_TILESET_6
+            MENUITEM "25-28\t7",                    IDM_VIEW_TILESET_7
+            MENUITEM "29-32\t8",                    IDM_VIEW_TILESET_8
+            MENUITEM "33-36\t9",                    IDM_VIEW_TILESET_9
+            MENUITEM "37-40\t0",                    IDM_VIEW_TILESET_10
+            MENUITEM "41\t`",                       IDM_VIEW_TILESET_11
+        END
+    END
+    POPUP "&Settings"
+    BEGIN
+        MENUITEM "&Screenmatch\tM",             IDM_SCREEN_MATCH
+        MENUITEM "&Vision\tV",                  IDM_VISION
+        MENUITEM "Sprite &Hard Default\tD",     IDM_SPRITE_HARDNESS
+        MENUITEM "&Auto Update Minimap",        IDM_AUTO_UPDATE_MINIMAP
+        , CHECKED
+        MENUITEM "&Options",                    IDM_OPTIONS
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Import Screen\tL",           IDM_IMPORT_SCREEN
+        MENUITEM "Take &Screenshot",            IDM_SCREEN_SHOT
+        MENUITEM ".c -> .d Converter",          IDM_COMPRESS_SCRIPTS
+        MENUITEM "ffcreate",                    IDM_FFCREATE, GRAYED
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About WinDinkedit...",       ID_APP_ABOUT
+    END
+END
+
+IDR_SPRITE_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Sprite Menu"
+    BEGIN
+        MENUITEM "Properties",                  IDM_SPRITE_PROPERTIES
+        MENUITEM "Set warp begin",              IDM_SET_WARP_BEGIN
+        MENUITEM "Set warp end",                IDM_SET_WARP_END
+        MENUITEM "Store sprite",                IDM_STORE_SPRITE
+    END
+END
+
+IDR_SCREEN_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Screen Properties"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "Screen",                      ID_SCREENPROPERTIES_SCREEN163
+        , GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Properties",                  ID_SCREEN_PROPERTIES
+        MENUITEM "Delete Screen",               ID_DELETE_SCREEN
+        MENUITEM "Vision",                      IDM_VISION
+        MENUITEM "Copy Screen",                 IDM_COPY_SCREEN
+        MENUITEM SEPARATOR
+        MENUITEM "Sprite",                      ID_SCREENPROPERTIES_SPRITE
+        , GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Set warp end",                IDM_SET_WARP_END
+    END
+END
+
+IDR_NEW_SCREEN MENU DISCARDABLE 
+BEGIN
+    POPUP "New Screen"
+    BEGIN
+        MENUITEM "New Screen",                  IDM_NEW_SCREEN
+        MENUITEM "Paste Screen",                IDM_PASTE_SCREEN
+    END
+END
+
+IDR_SIDEBAR MENU DISCARDABLE 
+BEGIN
+    POPUP "Scripts"
+    BEGIN
+        MENUITEM "refresh list",                IDM_REFRESH_LIST
+    END
+END
+
+IDR_SPRITE_ENTRY MENU DISCARDABLE 
+BEGIN
+    POPUP "Sprite Entry"
+    BEGIN
+        MENUITEM "Delete",                      IDM_DELETE_SPRITE_ENTRY
+        MENUITEM "Rename",                      IDM_RENAME_SPRITE_ENTRY
+    END
+END
+
+IDR_HARD_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Screen Properties"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "Hard Tile",                   ID_SCREENPROPERTIES_HARD
+        , GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Edit \tQ",                    IDM_EDIT_HARDNESS
+        MENUITEM "Set As Default \tD",          IDM_SET_DEFAULT_HARD_TILE
+        MENUITEM "Revert To Default",           IDM_REVERT_HARD_TILE
+        POPUP "Transform Hardness"
+        BEGIN
+            MENUITEM "Normal/Hill",                 59171
+            MENUITEM "Low/Water",                   59172
+            MENUITEM "Unknown",                     59173
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Screen",                      ID_SCREENPROPERTIES_SCREEN
+        , GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Properties",                  ID_SCREEN_PROPERTIES
+        MENUITEM "Delete",                      ID_DELETE_SCREEN
+        MENUITEM "Vision",                      IDM_VISION
+        MENUITEM "Set warp end",                IDM_SET_WARP_END
+        MENUITEM "Copy",                        IDM_COPY_SCREEN
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_NEW_DMOD,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_SAVE_FIX,            VIRTKEY, SHIFT, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 239, 60
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About WinDinkedit"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "WinDinkedit Version 1.4 Beta 1",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002",IDC_STATIC,40,24,119,8
+    DEFPUSHBUTTON   "OK",IDOK,182,7,50,14,WS_GROUP
+    LTEXT           "Created By: Gary Hertel and WC",IDC_STATIC,40,39,126,8
+END
+
+IDR_MAINFRAME DIALOG DISCARDABLE  0, 0, 330, 16
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_SPRITE_PROPERTIES DIALOG DISCARDABLE  0, 0, 355, 279
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Property Page"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "X",IDC_STATIC,14,16,8,8
+    LTEXT           "Y",IDC_STATIC,14,40,8,8
+    LTEXT           "Sequence",IDC_STATIC,14,73,34,8
+    LTEXT           "Frame",IDC_STATIC,14,102,20,8
+    LTEXT           "Base_idle",IDC_STATIC,14,128,32,8
+    LTEXT           "Base_walk",IDC_STATIC,14,152,36,8
+    LTEXT           "Base_attack",IDC_STATIC,14,178,41,8
+    LTEXT           "Base_death",IDC_STATIC,14,202,39,8
+    LTEXT           "Depth que",IDC_STATIC,14,226,34,8
+    LTEXT           "Touch damage",IDC_STATIC,136,87,49,8
+    LTEXT           "Touch sequence",IDC_STATIC,136,108,55,8
+    LTEXT           "Sound",IDC_STATIC,136,129,22,8
+    LTEXT           "Vision",IDC_STATIC,136,151,20,8
+    LTEXT           "Timing/Delay",IDC_STATIC,136,175,43,8
+    LTEXT           "Experience given",IDC_STATIC,136,200,56,8
+    LTEXT           "Brain",IDC_STATIC,237,65,17,8
+    LTEXT           "Defense",IDC_STATIC,253,98,28,8
+    LTEXT           "Hitpoints",IDC_STATIC,253,124,28,8
+    LTEXT           "Speed",IDC_STATIC,253,151,22,8
+    LTEXT           "Size",IDC_STATIC,253,176,14,8
+    LTEXT           "Warp screen :",IDC_STATIC,161,19,46,8
+    LTEXT           "x :",IDC_STATIC,239,19,8,8
+    LTEXT           "y :",IDC_STATIC,281,19,8,8
+    LTEXT           "Script",IDC_STATIC,134,228,19,8
+    EDITTEXT        IDC_X,29,14,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y,29,38,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Warp_screen,212,19,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Warp_x,251,19,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Warp_y,292,19,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Sequence,65,70,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Frame,65,99,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Base_idle,65,124,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Base_walk,65,146,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Base_attack,65,174,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Base_death,65,199,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Depth_que,65,225,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Touch_damage,207,86,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Touch_sequence,207,106,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Sound,207,128,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Vision,207,148,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Timing,207,173,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Experience_Given,207,198,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Script,168,226,65,13,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_Defense,290,92,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Hitpoints,290,122,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Speed,290,151,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Size,290,174,35,12,ES_AUTOHSCROLL
+    CONTROL         "Nohit",IDC_Nohit,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    139,64,33,10
+    CONTROL         "Hard",IDC_Hard,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    193,64,31,10
+    CONTROL         "Enable Warp (note: sprite must also be hard)",
+                    IDC_Enable_warp,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    165,39,155,10
+    CONTROL         "Background",IDC_ORNAMENTAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,73,18,55,10
+    CONTROL         "Person/Creature",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,
+                    73,29,68,10
+    CONTROL         "Invisible",IDC_INVISIBLE,"Button",BS_AUTORADIOBUTTON,73,
+                    42,41,10
+    GROUPBOX        "Warping",IDC_STATIC,149,7,175,48
+    GROUPBOX        "Type",IDC_STATIC,67,7,78,48
+    COMBOBOX        IDC_BRAIN,261,63,78,166,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Ok",IDOK,110,250,40,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,170,250,44,14,WS_GROUP
+    PUSHBUTTON      "Edit",IDC_EDIT_SPRITE_SCRIPT,237,225,26,14
+END
+
+IDD_SCREEN_PROPERTIES DIALOG DISCARDABLE  0, 0, 141, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Screen Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Script",IDC_STATIC,27,57,19,8
+    LTEXT           "Midi #",IDC_STATIC,27,38,20,8
+    CONTROL         "Inside",IDC_Inside,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,27,18,35,10
+    DEFPUSHBUTTON   "Ok",IDOK,19,77,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,75,76,50,14
+    EDITTEXT        IDC_Midi,60,33,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Script,60,53,64,14,ES_AUTOHSCROLL
+END
+
+IDD_VISION DIALOG DISCARDABLE  0, 0, 156, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Change Vision"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Vision",IDC_STATIC,17,24,20,8
+    EDITTEXT        IDC_Vision,49,22,40,14,ES_AUTOHSCROLL | WS_GROUP
+    PUSHBUTTON      "OK",IDOK,99,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,99,24,50,14
+END
+
+IDD_IMPORT_SCREEN DIALOG DISCARDABLE  0, 0, 173, 199
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Import Screen"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,116,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,116,24,50,14
+    LISTBOX         IDC_DMOD_IMPORT_LIST,7,7,102,185,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SPRITE_LIBRARY DIALOG DISCARDABLE  0, 0, 181, 82
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sprite Library entry"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Enter a name to call this sprite",IDC_STATIC,14,21,95,8
+    EDITTEXT        IDC_Name,21,34,57,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,118,21,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,118,38,50,14
+END
+
+IDD_FFCREATE DIALOG DISCARDABLE  0, 0, 256, 173
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Change graphics to fastfile?"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,199,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,199,24,50,14
+    CONTROL         "Delete bitmap files",IDC_DELETE_GRAPHICS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,127,143,73,10
+    LTEXT           "Changing the graphics to fastfile format is not recommended and can have a performance hit (at least in windinkedit).",
+                    IDC_STATIC,17,14,141,27
+    LTEXT           "If you have backed up your graphics then you may want to automatically delete the graphics files.  This is ONE way.  I do not want to have to convert peoples graphics back.",
+                    IDC_STATIC,17,106,107,52
+    LTEXT           "You may also lose some graphics quality if your graphics are not using the dink pallette.",
+                    IDC_STATIC,18,46,139,20
+    LTEXT           "Any files with names longer than 8 characters (not including the .bmp extension) will not be deleted or put in the .ff file.",
+                    IDC_STATIC,17,68,224,19
+END
+
+IDD_COMPRESS_SCRIPTS DIALOG DISCARDABLE  0, 0, 198, 133
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION ".c -> .d converter"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,141,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,141,24,50,14
+    LTEXT           "Converting files to .d makes the files harder to read for other dmod authors.  It also imposes a small performance hit for the dink engine (it does not make them faster!).",
+                    IDC_STATIC,7,7,111,44
+    CONTROL         "Delete .c Files",IDC_DELETE_C_FILES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,130,81,61,10
+    LTEXT           "If you have already backed up your dmod you can have this program automatically delete the .c files after compressing them.",
+                    IDC_STATIC,7,55,114,37
+    CONTROL         "Remove Comments",IDC_REMOVE_COMMENTS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,114,96,77,10
+END
+
+IDD_OPEN_DMOD DIALOG DISCARDABLE  0, 0, 157, 222
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Choose Dmod to Open"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,100,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,100,24,50,14
+    LISTBOX         IDC_DMOD_LIST,7,7,89,208,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_OPTIONS DIALOGEX 0, 0, 322, 133
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Options"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,88,112,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,183,112,50,14
+    EDITTEXT        IDC_SCREEN_GAP,63,20,40,14,ES_AUTOHSCROLL
+    LTEXT           "Screen Gap",IDC_STATIC,14,23,48,8
+    LTEXT           "Max Undos",IDC_STATIC,14,39,48,8
+    EDITTEXT        IDC_MAX_UNDOS,63,36,40,14,ES_AUTOHSCROLL
+    LTEXT           "AutoSave Time",IDC_STATIC,14,54,48,8
+    EDITTEXT        IDC_AUTO_SAVE,63,51,40,14,ES_AUTOHSCROLL
+    LTEXT           "(Minutes)",IDC_STATIC,104,51,48,8
+    CONTROL         "Show minimap update progress",IDC_SHOW_PROGRESS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,168,19,116,12
+    GROUPBOX        "Settings",IDC_STATIC,7,7,152,98
+    GROUPBOX        "Speed Optimizations",IDC_STATIC,163,7,152,48
+    CONTROL         "Optimize Dink.ini for optimal proformance",IDC_DINK_INI,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,168,31,139,12
+    LTEXT           "Tile Brush Size",IDC_STATIC,14,69,46,8
+    EDITTEXT        IDC_BRUSH_SIZE,63,66,40,14,ES_AUTOHSCROLL
+    CONTROL         "Enable Fast Minimap Update",IDC_FAST_MINIMAP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,168,42,140,12
+    CONTROL         "Show Sprite info when mouse hovers sprite",
+                    IDC_HOVER_SPRITE_INFO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,168,67,143,10
+    GROUPBOX        "Features",IDC_STATIC,163,56,152,49
+    CONTROL         "Show Hardness when mouse hovers sprite",IDC_CHECK2,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,168,79,143,10
+    CONTROL         "Show help text in main window",IDC_HELP_TEXT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,168,91,105,10
+END
+
+IDD_NEW_DMOD DIALOG DISCARDABLE  0, 0, 309, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create New Dmod"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,96,196,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,162,196,50,14
+    EDITTEXT        IDC_DMOD_DIRECTORY_NAME,90,18,89,14,ES_AUTOHSCROLL | 
+                    ES_OEMCONVERT
+    LTEXT           "Dmod Directory Name:",IDC_STATIC,7,19,72,8
+    LTEXT           "Dmod Title:",IDC_STATIC,7,44,37,8
+    EDITTEXT        IDC_DMOD_TITLE,90,42,190,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AUTHOR,90,67,189,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMAIL_WEBSITE,90,92,190,14,ES_AUTOHSCROLL
+    LTEXT           "Description:",IDC_STATIC,7,117,38,8
+    EDITTEXT        IDC_DMOD_DESCRIPTION,90,113,191,76,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "(Note: press ctrl + return",IDC_STATIC,7,154,76,8
+    LTEXT           "to got to next line)",IDC_STATIC,13,162,57,8
+    LTEXT           "(required)",IDC_STATIC,47,27,30,8
+    LTEXT           "Copyright/Author",IDC_STATIC,7,68,54,8
+    LTEXT           "Email/Website",IDC_STATIC,7,92,47,8
+END
+
+IDD_DMOD_PROPERTIES DIALOG DISCARDABLE  0, 0, 289, 183
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dmod Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,96,162,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,162,162,50,14
+    LTEXT           "Dmod Title:",IDC_STATIC,7,9,37,8
+    LTEXT           "Copyright/Author",IDC_STATIC,7,34,54,8
+    EDITTEXT        IDC_DMOD_TITLE,90,7,192,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AUTHOR,90,32,192,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMAIL_WEBSITE,90,57,192,14,ES_AUTOHSCROLL
+    LTEXT           "Description:",IDC_STATIC,7,82,38,8
+    EDITTEXT        IDC_DMOD_DESCRIPTION,90,78,192,76,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL
+    LTEXT           "(Note: press ctrl + return",IDC_STATIC,7,119,76,8
+    LTEXT           "to got to next line)",IDC_STATIC,13,127,57,8
+    LTEXT           "Email/Website",IDC_STATIC,7,60,47,8
+END
+
+IDD_UPDATE DIALOGEX 0, 0, 190, 28
+STYLE DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_UPDATE,"msctls_progress32",PBS_SMOOTH | WS_BORDER,
+                    7,7,176,14
+END
+
+IDD_GETFOLDER_DIALOG DIALOG DISCARDABLE  0, 0, 239, 74
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Folder"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,62,42,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,126,42,50,14
+    EDITTEXT        IDC_ED_FOLDER,7,18,165,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",ID_GETFOLDER,182,18,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,4
+ PRODUCTVERSION 1,0,0,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "Real Time Dink Smallwood Map Editor\0"
+            VALUE "FileVersion", "1, 0, 0, 4\0"
+            VALUE "InternalName", "WinDinkedit\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "OriginalFilename", "WinDinkedit.EXE\0"
+            VALUE "ProductName", "WinDinkedit Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 4\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_SPRITE_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 272
+    END
+
+    IDD_SCREEN_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 134
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_VISION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_IMPORT_SCREEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_SPRITE_LIBRARY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 174
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_FFCREATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+
+    IDD_COMPRESS_SCRIPTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 191
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_OPEN_DMOD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 150
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 315
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_NEW_DMOD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_DMOD_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_UPDATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 21
+    END
+
+    IDD_GETFOLDER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SPRITE_PROPERTIES DLGINIT
+BEGIN
+    IDC_BRAIN, 0x403, 8, 0
+0x3a30, 0x4e20, 0x6e6f, 0x0065, 
+    IDC_BRAIN, 0x403, 8, 0
+0x3a31, 0x4420, 0x6e69, 0x006b, 
+    IDC_BRAIN, 0x403, 12, 0
+0x3a32, 0x4e20, 0x746f, 0x7520, 0x6573, 0x0064, 
+    IDC_BRAIN, 0x403, 8, 0
+0x3a33, 0x4420, 0x6375, 0x006b, 
+    IDC_BRAIN, 0x403, 7, 0
+0x3a34, 0x5020, 0x6769, "\000" 
+    IDC_BRAIN, 0x403, 24, 0
+0x3a35, 0x5320, 0x7165, 0x6420, 0x6569, 0x202c, 0x656c, 0x7661, 0x2065, 
+0x7266, 0x6d61, 0x0065, 
+    IDC_BRAIN, 0x403, 10, 0
+0x3a36, 0x5220, 0x7065, 0x6165, 0x0074, 
+    IDC_BRAIN, 0x403, 11, 0
+0x3a37, 0x5320, 0x7165, 0x6420, 0x6569, "\000" 
+    IDC_BRAIN, 0x403, 12, 0
+0x3a38, 0x4e20, 0x746f, 0x7520, 0x6573, 0x0064, 
+    IDC_BRAIN, 0x403, 19, 0
+0x3a39, 0x4320, 0x6572, 0x7461, 0x7275, 0x2065, 0x6428, 0x6169, 0x2967, 
+"\000" 
+    IDC_BRAIN, 0x403, 23, 0
+0x3031, 0x203a, 0x7243, 0x6165, 0x7574, 0x6572, 0x2820, 0x6f6e, 0x6420, 
+0x6169, 0x2967, "\000" 
+    IDC_BRAIN, 0x403, 21, 0
+0x3131, 0x203a, 0x694d, 0x7373, 0x6c69, 0x2065, 0x7228, 0x7065, 0x6165, 
+0x2974, "\000" 
+    IDC_BRAIN, 0x403, 16, 0
+0x3231, 0x203a, 0x6853, 0x6972, 0x6b6e, 0x672f, 0x6f72, 0x0077, 
+    IDC_BRAIN, 0x403, 10, 0
+0x3331, 0x203a, 0x6f4d, 0x7375, 0x0065, 
+    IDC_BRAIN, 0x403, 11, 0
+0x3431, 0x203a, 0x7542, 0x7474, 0x6e6f, "\000" 
+    IDC_BRAIN, 0x403, 11, 0
+0x3531, 0x203a, 0x6853, 0x6461, 0x776f, "\000" 
+    IDC_BRAIN, 0x403, 17, 0
+0x3631, 0x203a, 0x6d53, 0x7261, 0x2074, 0x6550, 0x706f, 0x656c, "\000" 
+    IDC_BRAIN, 0x403, 12, 0
+0x3731, 0x203a, 0x694d, 0x7373, 0x6c69, 0x0065, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Windinkedit\n\nDmod\ndmod (dink.dat)\n.dat\nDMOD\nDink Module"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "WinDinkedit"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+    ID_INDICATOR_MOUSE      "Screen: 000,  x: 000  y: 000  "
+    ID_INDICATOR_VISION     "vision: 000"
+    ID_INDICATOR_SCR_MATCH  "SCR_MATCH"
+    ID_INDICATOR_SPR_HARD   "SPR_HARD"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new Dmod\nNew"
+    ID_FILE_OPEN            "Open an existing dmod\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SAVE_FIX             "Save the dmod\nSave"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit WinDinkedit; prompts to save dmod\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this dmod"
+    ID_FILE_MRU_FILE2       "Open this dmod"
+    ID_FILE_MRU_FILE3       "Open this dmod"
+    ID_FILE_MRU_FILE4       "Open this dmod"
+    ID_FILE_MRU_FILE5       "Open this dmod"
+    ID_FILE_MRU_FILE6       "Open this dmod"
+    ID_FILE_MRU_FILE7       "Open this dmod"
+    ID_FILE_MRU_FILE8       "Open this dmod"
+    ID_FILE_MRU_FILE9       "Open this dmod"
+    ID_FILE_MRU_FILE10      "Open this dmod"
+    ID_FILE_MRU_FILE11      "Open this dmod"
+    ID_FILE_MRU_FILE12      "Open this dmod"
+    ID_FILE_MRU_FILE13      "Open this dmod"
+    ID_FILE_MRU_FILE14      "Open this dmod"
+    ID_FILE_MRU_FILE15      "Open this dmod"
+    ID_FILE_MRU_FILE16      "Open this dmod"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+    ID_VIEW_AUTOARRANGE     "Arrange icons on a grid."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_SMALLICON       "Display items by using small icons.\nSmall Icons"
+    ID_VIEW_LARGEICON       "Display items by using large icons.\nLarge Icons"
+    ID_VIEW_LIST            "Displays items in a list.\nList"
+    ID_VIEW_DETAILS         "Displays detailed information about each item in the window.\nDetails"
+    ID_VIEW_LINEUP          "Arranges icons in a grid."
+    ID_VIEW_BYNAME          "Sorts the icons alphabetically."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_PROPERTIES          "Edit Sprite Properties"
+    ID_SCREEN_PROPERTIES    "Change Properties of Screen"
+    ID_DELETE_SCREEN        "Deletes current screen"
+    IDM_VISION              "Change Vision"
+    IDM_NEW_SCREEN          "Creates a new screen"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\WinDinkedit.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

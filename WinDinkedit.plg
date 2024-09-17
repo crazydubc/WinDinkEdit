@@ -1,0 +1,67 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: WinDinkedit - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/WinDinkedit.res" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\Administrator\Desktop\programming stuff\WDE\WinDinkedit.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2B.tmp" with contents
+[
+dxguid.lib ddraw.lib dinput.lib dsound.lib winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/WinDinkedit.pdb" /machine:I386 /out:"Release/WinDinkedit.exe" 
+".\Release\LeftView.obj"
+".\Release\MainFrm.obj"
+".\Release\StatusBar.obj"
+".\Release\StdAfx.obj"
+".\Release\WinDinkedit.obj"
+".\Release\WinDinkeditDoc.obj"
+".\Release\WinDinkeditView.obj"
+".\Release\DmodPropertiesDialog.obj"
+".\Release\Fastfile.obj"
+".\Release\GetFolderDlg.obj"
+".\Release\ImportScreen.obj"
+".\Release\NewDmodDialog.obj"
+".\Release\OpenDmod.obj"
+".\Release\Options.obj"
+".\Release\ScreenProperties.obj"
+".\Release\ScriptCompressor.obj"
+".\Release\SpriteLibraryEntry.obj"
+".\Release\SpriteProperties.obj"
+".\Release\VisionChange.obj"
+".\Release\Colors.obj"
+".\Release\Common.obj"
+".\Release\ddutil.obj"
+".\Release\Engine.obj"
+".\Release\Globals.obj"
+".\Release\GraphicsManager.obj"
+".\Release\HardTileSelector.obj"
+".\Release\ImportMap.obj"
+".\Release\Interface.obj"
+".\Release\Map.obj"
+".\Release\Map2.obj"
+".\Release\Minimap.obj"
+".\Release\Screen.obj"
+".\Release\Sequence.obj"
+".\Release\Sprite.obj"
+".\Release\SpriteEditor.obj"
+".\Release\SpriteLibrary.obj"
+".\Release\SpriteSelector.obj"
+".\Release\Tile.obj"
+".\Release\TileSelector.obj"
+".\Release\Tools.obj"
+".\Release\Undo.obj"
+".\Release\WinDinkedit.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2B.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+WinDinkedit.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
